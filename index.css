@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    color: #222;
+    padding: 25px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #263b80;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+section {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.summary {
+    background: #263b80;
+    color: white;
+    text-align: center;
+}
+
+.summary h2 {
+    margin-bottom: 10px;
+}
+
+#total {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #263b80;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.expense-info {
+    overflow-wrap: anywhere;
+}
+
+.expense-info p {
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.expense-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.expense-amount {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    padding: 8px 10px;
+}
+
+.clear-btn {
+    background: #e74c3c;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.empty {
+    color: #777;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 420px) {
+    .expense-item {
+        align-items: flex-start;
+    }
+
+    .expense-right {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
